@@ -75,10 +75,11 @@ WSGI_APPLICATION = 'djangoProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'polls',
+        'NAME': 'trainingdb',
         'USER': 'root',
-        'PASSWORD': 'Thorn123',
+        'PASSWORD': 'root',
         'HOST': 'localhost',
+        'PORT': '3306'
     }
 }
 

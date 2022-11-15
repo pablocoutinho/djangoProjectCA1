@@ -12,3 +12,5 @@ https://learndjango.com/tutorials/django-signup-tutorial
 
 https://learndjango.com/tutorials/django-password-reset-tutorial
 
+
+STYLE AND README ABOUT HOW IT IS
