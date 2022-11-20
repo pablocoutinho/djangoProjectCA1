@@ -1,7 +1,7 @@
 # Back-end Web Development - BSC30922 - Semester 1 & 2 
 ## Continuous Assessment 1 
 
-* Students Name: `Josue Santos` 
+* Student Name: `Josue Santos` 
 * Student Number: `24061` 
 
 ## Django Project
@@ -26,4 +26,5 @@ Develop a web application API using Python and the Django framework that can per
 ## 
 
 ## References:
-- [Game Design: First Level](https://www.youtube.com/watch?v=YtzIXCKr8Wo)
+- [ Django Tutorial ](https://docs.djangoproject.com/en/4.1/intro/tutorial01/)
+- [ Django Templates ](https://docs.djangoproject.com/en/4.1/topics/templates/)
