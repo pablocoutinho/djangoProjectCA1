@@ -7,6 +7,7 @@ from .models import Question, Choice
 from django.utils import timezone
 
 
+# HOW THE CONTENT WILL BE DELIVERED IN THE WEB PAGE
 class IndexView(generic.ListView):
     template_name = 'polls/index.html'
     context_object_name = 'latest_question_list'

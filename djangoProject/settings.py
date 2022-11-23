@@ -29,15 +29,15 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'polls.apps.PollsConfig',
-    'django.contrib.admin',
-    'django.contrib.auth',
+    'polls.apps.PollsConfig',  # polls app
+    'django.contrib.admin',  # admin view to register questions/choices
+    'django.contrib.auth',  # CA2
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'accounts',
-    'bootstrap5',
+    'accounts',  # CA2
+    'bootstrap5',  # Installed bootstrap for the style on the webpage
 ]
 
 MIDDLEWARE = [
@@ -53,9 +53,9 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'djangoProject.urls'
 
 TEMPLATES = [
-    {
+    {       # HERE IS WHERE DJANGO WILL SEARCH FOR THE TEMPLATES TO USE ON THE WEB PAGES
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [BASE_DIR / 'templates'], # DIRECTORY WHERE TEMPLATES ARE LOCATED
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -75,11 +75,11 @@ WSGI_APPLICATION = 'djangoProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'trainingdb',
-        'USER': 'root',
+        'ENGINE': 'django.db.backends.mysql',  # SWITCHED FROM SQLITE TO MYSQL
+        'NAME': 'trainingdb',  # DATABASE CREATED FOR THIS PROJECT
+        'USER': 'root',  # basic credentials for access
         'PASSWORD': 'root',
-        'HOST': 'localhost',
+        'HOST': 'localhost',  # local connection with database
         'PORT': '3306'
     }
 }
@@ -118,6 +118,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+# Not been used for this project, instead using Bootstrap
 STATIC_URL = '/static/'
 
 # Default primary key field type
@@ -125,7 +126,8 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-LOGIN_REDIRECT_URL = "home"  # new
-LOGOUT_REDIRECT_URL = "home"  # new
-EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"  # new
-EMAIL_FILE_PATH = BASE_DIR / "sent_emails"  # new
+#  BELONG TO CA2
+LOGIN_REDIRECT_URL = "home"
+LOGOUT_REDIRECT_URL = "home"
+EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
+EMAIL_FILE_PATH = BASE_DIR / "sent_emails"

@@ -4,6 +4,8 @@ from django.utils import timezone
 from django.contrib import admin
 
 
+# THE MODELS SERVE THE PURPOSE OF CREATING TABLES IN THE DATABASE.
+# AND TO DEFINE THE DATABASE LAYOUT
 class Question(models.Model):
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')

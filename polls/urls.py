@@ -16,6 +16,8 @@ Including another URLconf
 from django.urls import path
 from . import views
 
+# HERE IS ADDED THE URLS PATH, THIS IS REFLECTED ON THE WEBSITE INPUT BAR.
+# THIS FILE WORKS AS A MAP FOR THE POLLS APP
 app_name = 'polls'
 urlpatterns = [
     path('', views.IndexView.as_view(), name='index'),
