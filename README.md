@@ -28,6 +28,10 @@ The data should be complex enough, containing different types of values (Strings
 
 ### Assignment 1 Solution
 
+<b>To run the web application:</b><br>
+<i> py manage.py runserver</i></br>
+http://127.0.0.1:8000/<br>
+
 The project root directory is called djangoProject (outer directory) and it is the container folder for the project. 
 Inside this directory, there are:
 
